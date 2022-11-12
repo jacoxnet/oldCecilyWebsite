@@ -4,6 +4,7 @@
         <title>Cecily Cox</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="/styles.css">
+        <script src='index.js'></script>
     </head>
 
     <body>
@@ -13,13 +14,13 @@
                 <hr>
             </div>
             <div class="row justify-content-center">
-                    <button class="btn btn-sm btn-outline-primary" id="inbox">iMovie</button>
-                    <button class="btn btn-sm btn-outline-primary" id="compose">Garage Band</button>
-                    <button class="btn btn-sm btn-outline-primary" id="sent">PowerPoint</button>
-                    <button class="btn btn-sm btn-outline-primary" id="archived">Scratch</button>
+                    <button class="btn btn-sm btn-outline-primary active" id="imovie">iMovie</button>
+                    <button class="btn btn-sm btn-outline-primary" id="garageband">Garage Band</button>
+                    <button class="btn btn-sm btn-outline-primary" id="powerpoint">PowerPoint</button>
+                    <button class="btn btn-sm btn-outline-primary" id="scratch">Scratch</button>
             </div>
             <div class="row justify-content-center">
-                <div class='card' id='imovie'>
+                <div class='card' id='imoviediv'>
                     <img src='https://www.apple.com/v/imovie/h/images/overview/icon_imovie_mac__clgq43wv52z6_large.png' class='card-img-top' alt='imovie image'>
                     <div class='card-body'>
                         <div class="card-body">
@@ -32,6 +33,51 @@
                                 and Storyboards on iPhone or iPad.
                             </p>
                             <p><i>Watch an iMovie I created</i></p>
+                            <iframe class="embed-responsive-item" src="My LBJ Movie no captions.mp4" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='card' id='garagebanddiv'>
+                    <img src='https://www.apple.com/v/mac/garageband/m/images/garageband/icon_hero__dkl6opq1wnma_large.png' class='card-img-top' alt='garageband image'>
+                    <div class='card-body'>
+                        <div class="card-body">
+                            <h3 class="card-title">GarageBand</h3>
+                            <h4 class='card-subtitle'>Incredible music. In the key of easy.</h4>
+                            <p class='card-text'>
+                                GarageBand is a fully equipped music creation studio right inside your Mac — with a complete 
+                                sound library that includes instruments, presets for guitar and voice, and an incredible selection 
+                                of session drummers and percussionists. With an intuitive, modern design, it’s easy to learn, 
+                                play, record, create, and share your hits worldwide. Now you’re ready to make music like a pro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='card' id='powerpointdiv'>
+                    <img src='https://www.itsolutions-inc.com/assets/uploads/news/Animations_in_PowerPoint_Feature.jpg' class='card-img-top' alt='imovie image'>
+                    <div class='card-body'>
+                        <div class="card-body">
+                            <h3 class="card-title">Microsoft PowerPoint</h3>
+                            <h4 class='card-subtitle'>Create great presentations in Microsoft Powerpoint</h4>
+                            <p class='card-text'>
+                                The PowerPoint app gives you access to the familiar slideshow maker tool you already know. Create, edit, view, present, or share presentations quickly and easily from anywhere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class='card' id='scratchdiv'>
+                    <img src='https://i.pcmag.com/imagery/reviews/02WCHOURiTVXqgIxxoeAGAP-2.fit_scale.size_1028x578.v1569482197.jpg' class='card-img-top' alt='imovie image'>
+                    <div class='card-body'>
+                        <div class="card-body">
+                            <h3 class="card-title">MIT Scratch</h3>
+                            <h4 class='card-subtitle'>Create stories, games and animations and share with others around the world</h4>
+                            <p class='card-text'>
+                                Description of Scratch.
+                            </p>
+                            <p><i>Watch a Scratch game I created</i></p>
                             <iframe class="embed-responsive-item" src="My LBJ Movie no captions.mp4" allowfullscreen></iframe>
                         </div>
                     </div>

@@ -20,3 +20,7 @@ h1 {
 button {
     margin: 2px;
 }
+
+.draft {
+    color: red;
+}

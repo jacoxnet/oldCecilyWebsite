@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#garageband').addEventListener('click', () => gotogarageband());
     document.querySelector('#powerpoint').addEventListener('click', () => gotopowerpoint());
     document.querySelector('#scratch').addEventListener('click', () => gotoscratch());
+    document.querySelector('#tpack').addEventListener('click', () => gototpack());
+    document.querySelector('#reflection').addEventListener('click', () => gotoreflection());
 
     gotobio();
 });
@@ -19,6 +21,8 @@ function blankall() {
     document.querySelector('#garagebanddiv').style.display = 'none';
     document.querySelector('#powerpointdiv').style.display = 'none';
     document.querySelector('#scratchdiv').style.display = 'none';
+    document.querySelector('#tpackdiv').style.display = 'none';
+    document.querySelector('#reflectiondiv').style.display = 'none';
     
     // make all buttons inactive
     document.querySelector('#bio').classList.remove('active');
@@ -27,6 +31,8 @@ function blankall() {
     document.querySelector('#garageband').classList.remove('active');
     document.querySelector('#powerpoint').classList.remove('active');
     document.querySelector('#scratch').classList.remove('active');
+    document.querySelector('#tpack').classList.remove('active');
+    document.querySelector('#reflection').classList.remove('active');
 
 }
 
@@ -64,4 +70,16 @@ function gotoscratch() {
     blankall();
     document.querySelector('#scratchdiv').style.display = 'block';
     document.querySelector('#scratch').classList.add('active');
+}
+
+function gototpack() {
+    blankall();
+    document.querySelector('#tpackdiv').style.display = 'block';
+    document.querySelector('#tpack').classList.add('active');
+}
+
+function gotoreflection() {
+    blankall();
+    document.querySelector('#reflectiondiv').style.display = 'block';
+    document.querySelector('#reflection').classList.add('active');
 }
